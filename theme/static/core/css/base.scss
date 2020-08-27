@@ -9,12 +9,15 @@ h1, h2, h3, h4 {
     color: $headline-color;
     background-color: $headline-background-color;
     line-height: 40px;
+    font-family: sans-serif !important;
 }
 h5, h6 {
     color: $headline-color;
     background-color: $headline-background-color;
     font-size: medium;
     line-height: 20px;
+    font-family: sans-serif !important;
+
 }
 h1 {
     font-size: 28px;
