@@ -1956,8 +1956,8 @@ msgstr "Überspringen"
 #: projects/templates/projects/project_questions_questionset_head.html:15
 #: projects/templates/projects/project_questions_questionset_head.html:36
 #, python-format
-msgid "Add %(name)s"
-msgstr "%(name)s hinzufügen"
+msgid "Add additional %(name)s"
+msgstr "Weitere %(name)s hinzufügen"
 
 #: projects/templates/projects/project_questions_add_field_help.html:4
 #, fuzzy, python-format

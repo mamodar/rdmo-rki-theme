@@ -11,23 +11,28 @@
 
 {% block page %}
 
-    <h1>{{ project.title }}</h1>
-
-    <h2>{% trans 'Description' %}</h2>
-    {% if project.description %}
-
-    <div>{{ project.description }}</div>
-
+    {% has_perm 'projects.change_project_object' request.user project as can_change_project %}
+    {% if can_change_project %}
+        <h1>{{ project.title }} </h1>
+        <h2>{% trans 'Description' %}  <a href="{% url 'project_update' project.pk %}" class="fa fa-pen"></a></h2>
+        {% if project.description %}
+        <div>{{ project.description }}</div>
+        {% else %}
+        <p>{% trans 'No description available.' %}</p>
+        {% endif %}
+        <h2>{% trans 'Catalog' %} <a href="{% url 'project_update' project.pk %}" class="fa fa-pen"></a>  </h2>
+        <p>{{project.catalog.title}} <p>
     {% else %}
-
-    <p>{% trans 'No description available.' %}</p>
-
+        <h1>{{ project.title }} </h1>
+        <h2>{% trans 'Description' %}</h2>
+        {% if project.description %}
+        <div>{{ project.description }}</div>
+        {% else %}
+        <p>{% trans 'No description available.' %}</p>
+        {% endif %}
+        <h2>{% trans 'Catalog' %}</h2>
+        <p>{{project.catalog.title}} <p>
     {% endif %}
-
-    <h2>{% trans 'Catalog' %}</h2>
-
-    <p>{{project.catalog.title}} <a href="update" title="Katalog wechseln">🖉</a> <p>
-
     {% include 'projects/project_detail_tasks.html' %}
     {% include 'projects/project_detail_views.html' %}
     {% include 'projects/project_detail_snapshots.html' %}

@@ -5,7 +5,10 @@
 <h2></h2>
 <ul class="list-unstyled">
     <li>
-        <h2><a style = "font-weight: bold" href="{% url 'project_questions' project.pk %}">{% trans 'Answer questions' %}</a></h2>
+        <a style = "font-weight: bold" href="{% url 'project_questions' project.pk %}">{% trans 'Answer questions' %}</a>
+    </li>
+    <li>
+        <a href="{% url 'projects' %}">{% trans 'Back to projects overview' %}</a>
     </li>
 </ul>
 
@@ -14,11 +17,13 @@
 {% has_perm 'projects.change_project_object' request.user project as can_change_project %}
 {% has_perm 'projects.delete_project_object' request.user project as can_delete_project %}
 {% if can_change_project or can_delete_project %}
+
+<h2></h2>
 <ul class="list-unstyled">
     {% if can_change_project %}
-    <li>
+    <!--li>
         <a href="{% url 'project_update' project.pk %}">{% trans 'Update project information' %}</a>
-    </li>
+    </li-->
     <!--li>
         <a href="{% url 'project_update_tasks' project.pk %}">{% trans 'Update project tasks' %}</a>
     </li>
@@ -27,9 +32,9 @@
     </li-->
     {% endif %}
     {% if can_delete_project %}
-    <li>
+    <!--li>
         <a href="{% url 'project_delete' project.pk %}">{% trans 'Delete project' %}</a>
-    </li>
+    </li-->
     {% endif %}
 </ul>
 {% endif %}
@@ -57,18 +62,14 @@
 
 {% has_perm 'projects.add_membership_object' request.user project as can_add_membership %}
 {% if can_add_membership %}
-<ul class="list-unstyled">
+<!--ul class="list-unstyled">
     <li>
         <a href="{% url 'membership_create' project.pk %}">{% trans 'Add member' %}</a>
     </li>
-</ul>
+</ul-->
 {% endif %}
 
-<ul class="list-unstyled">
-    <li>
-        <a href="{% url 'projects' %}">{% trans 'Back to projects overview' %}</a>
-    </li>
-</ul>
+
 
 {% has_perm 'projects.export_project_object' request.user project as can_export_project %}
 {% if can_add_membership %}
