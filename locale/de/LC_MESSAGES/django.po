@@ -1881,8 +1881,8 @@ msgid ""
 "tasks will be generated."
 msgstr ""
 "Keine aktiven Aufgaben gefunden. Bitte beantworten Sie zunächst die Fragen "
-"im Fragenkatalog, in dem Sie \"Fragen beantworten\" auswählen. Aus Ihren "
-"Antworten werden notwendige die Aufgaben generiert."
+"im Fragenkatalog, indem Sie „Fragen beantworten“ auswählen. Aus Ihren "
+"Antworten werden die notwendigen Aufgaben für Sie generiert."
 
 #: projects/templates/projects/project_detail_views.html:9 views/models.py:113
 #: views/templates/views/views.html:104
@@ -1956,8 +1956,8 @@ msgstr "Überspringen"
 #: projects/templates/projects/project_questions_questionset_head.html:15
 #: projects/templates/projects/project_questions_questionset_head.html:36
 #, python-format
-msgid "Add additional %(name)s"
-msgstr "Weitere %(name)s hinzufügen"
+msgid "Add additional %(name_plural)s"
+msgstr "Weitere %(name_plural)s hinzufügen"
 
 #: projects/templates/projects/project_questions_add_field_help.html:4
 #, fuzzy, python-format
@@ -1967,7 +1967,7 @@ msgstr "Weitere %(name)s hinzufügen"
 #| "cross (&times;)."
 msgid ""
 "Please enter the %(name_plural)s line by line. You can add %(name_plural)s "
-"using the green button and remove them using the red cross (&times;)."
+"using the green button and remove them using the blue cross (&times;)."
 msgstr ""
 "Bitte nutzen Sie für die %(name_plural)s jeweils eine eigene Zeile. Sie "
 "können weitere %(name_plural)s mit dem grünen Button hinzufügen und mit dem "
