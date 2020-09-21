@@ -328,7 +328,7 @@ li.has-warning > a.control-label > i {
 
 // adjust background "hover" color in select2 to $link-color
 .select2-results__option--highlighted{
-    background-color: $link-color !important,
+    background-color: $link-color !important;
 }
 
 .import-submit {
@@ -342,22 +342,22 @@ li.has-warning > a.control-label > i {
 
 
 .btn-primary {
-     background-color: $success-color;
-     border-color: $success-color;
+     background-color: $primary-color;
+     border-color: $primary-color;
 }
 
 .progress-bar {
-     background-color: $success-color;
+     background-color: $primary-color;
 }
 
 .btn-primary:disabled{
-     background-color: $success-color;
-     border-color: $success-color;
+     background-color: $primary-color;
+     border-color: $primary-color;
 }
 
 .btn-primary:hover{
-     background-color: $success-color;
-     border-color: $success-color;
+     background-color: $primary-color;
+     border-color: $primary-color;
 }
 
 .btn-success {
