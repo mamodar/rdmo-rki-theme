@@ -1536,9 +1536,12 @@ msgstr "Die Site, zu der dieses Projekt gehört (in einem Multi-Standort-Setup)"
 msgid "Title"
 msgstr "Titel"
 
+msgid "Working title"
+msgstr "Arbeitstitel"
+
 #: projects/models.py:38
-msgid "The title for this project."
-msgstr "Der Titel für dieses Projekt."
+msgid "The working title for this project."
+msgstr "Der Arbeitstitel für dieses Projekt."
 
 #: projects/models.py:42 projects/models.py:153
 #: projects/templates/projects/project_detail.html:17

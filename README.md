@@ -9,6 +9,7 @@ This project aims at  improving the UI and UX of RDMO. It also adapts the RKI th
 3. Checkout [this repository](https://github.com/mamodar/rdmo-rki-theme.git) on your server
 4. Copy all files from `rdmo-rki-theme/theme` into `rdmo-app/theme`, overwrite
 5. Copy all files from `rdmo-rki-theme/local` into `rdmo-app/env/lib/python3.6/site-packages/rdmo/local`, overwrite
+5. Copy all files from `rdmo-rki-theme/projects` into `rdmo-app/env/lib/python3.6/site-packages/rdmo/projects`, overwrite
 
 
-Repeat step 3. to 5. whenever the theme or RDMO is updated.
+Repeat step 3. to 6. whenever the theme or RDMO is updated.
