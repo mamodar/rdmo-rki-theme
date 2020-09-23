@@ -7,6 +7,7 @@ NEW_ENG The new string in english
 OLD_DE The original string in german  
 NEW_DE The new string in german  
 
+
 ## How to
 
 1. `source ~/rdmo-app/env/bin/activate`
@@ -32,9 +33,11 @@ NEW_DE The new string in german
     5. `django-admin makemessages`
     5. `django-admin compilemessages`
 
-6. Copy all changes files to this project
+6. Copy all changes into this project
     6. Copy FILE from `~/rdmo-app/theme/...` into `~/rdmo-rki-theme/theme/...`
     6. Copy *django.po* **and** *django.mo* locale into `~/rdmo-rki.theme/locale/...` 
-    6. Replace FILE by FILEBACKUP
+    6. Revert change: Replace FILE by FILEBACKUP
 
-Do not espace quotation marks in FILE but only in *djano.po*
+## Additional information
+-  Create syslink to RDMO main directory `ln -s ~/rdmo-app/env/lib/python3.6/site-packages/rdmo/ ~/rdmo-app/rdmo-main`
+- Do not espace quotation marks in FILE but only in *djano.po*
