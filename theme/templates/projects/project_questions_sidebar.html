@@ -10,25 +10,6 @@
         </div>
     </div>
 
-    <!--h2>{% trans 'Navigation' %}</h2>
-
-    <p class="help-block">
-        {% trans 'Please note that using the navigation will discard any usaved input.' %}
-    </p>
-
-    <ul class="list-unstyled">
-        <li>
-            <a href="" ng-class="{ disabled: service.questionset.prev === null }" ng-click="service.prev()">
-                {% trans 'skip to previous page' %}
-            </a>
-        </li>
-        <li>
-            <a href="" ng-class="{ disabled: service.questionset.next === null }" ng-click="service.next()">
-                {% trans 'skip to next page' %}
-            </a>
-        </li>
-    </ul-->
-
     <ul class="list-unstyled">
         <li>
             <a href="{% url 'project' project.id %}">{% trans 'Back to project overview' %}</a>

@@ -3195,6 +3195,9 @@ msgstr ""
 "Eine leere Liste bedeutet, dass die Ansicht mit jedem Katalog verwendet "
 "werden kann."
 
+msgid "Search"
+msgstr "Suche"
+
 #~ msgid "My Data"
 #~ msgstr "Meine Daten"
 
@@ -3205,9 +3208,6 @@ msgstr ""
 
 #~ msgid "Filter conditions"
 #~ msgstr "Bedingungen filtern"
-
-#~ msgid "Search"
-#~ msgstr "Suche"
 
 #~ msgid "All URI prefixes"
 #~ msgstr "Alle URI Prefixe"
