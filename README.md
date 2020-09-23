@@ -1,6 +1,6 @@
 # RKI Theme for RDMO
 
-This project tries to improve the UI and UX of RDMO. It also adapts the RKI theme used in the [datalinker](https://github.com/mamodar/datalinker) to RDMO.
+This project aims at  improving the UI and UX of RDMO. It also adapts the RKI theme used in the [datalinker](https://github.com/mamodar/datalinker) to RDMO.
 
 ## Install
 0. Check if the version in [VERSION](VERSION) matches the RDMO version
