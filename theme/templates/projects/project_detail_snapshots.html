@@ -1,10 +1,11 @@
 {% load i18n %}
 {% load rules %}
-
+<!-- CHANGE add an add snapshot button -->
 {% has_perm 'projects.change_snapshot_object' request.user project as can_change_snapshot %}
 {% has_perm 'projects.rollback_snapshot_object' request.user project as can_rollback_snapshot %}
 {% has_perm 'projects.add_snapshot_object' request.user project as can_add_snapshot %}
 {% if can_add_snapshot %}
+
     <h2>{% trans 'Snapshots' %} <a style = "font-size: large" href="{% url 'snapshot_create' project.pk %}" class="fa fa-plus"></a></h2>
 {% else %}
     <h2>{% trans 'Snapshots' %}</h2>

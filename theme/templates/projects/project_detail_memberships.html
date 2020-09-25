@@ -1,12 +1,13 @@
 {% load i18n %}
 {% load rules %}
 {% load accounts_tags %}
-
+<!-- CHANGE add an add membership button -->
 {% has_perm 'projects.change_membership_object' request.user project as can_change_membership %}
 {% has_perm 'projects.is_project_owner' request.user project as is_project_owner %}
 {% has_perm 'projects.delete_membership_object' request.user project as can_delete_membership %}
 {% has_perm 'projects.add_membership_object' request.user project as can_add_membership %}
 {% if can_add_membership %}
+
     <h2>{% trans 'Members' %}  <a style = "font-size: large" href="{% url 'membership_create' project.pk %}" class="fa fa-plus"></a></h2>
 {% else %}
     <h2>{% trans 'Members' %}</h2>
