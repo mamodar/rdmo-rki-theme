@@ -2169,12 +2169,6 @@ msgstr "Neues Projekt erstellen"
 msgid "Create project"
 msgstr "Neues Projekt erstellen"
 
-#: projects/templates/projects/project_questions.html:39
-#, fuzzy
-#| msgid "Question"
-msgid "Question"
-msgstr "Frage"
-
 #: projects/templates/projects/project_questions.html:74
 msgid "Save and proceed"
 msgstr "Sichern und fortfahren"
@@ -2393,13 +2387,6 @@ msgstr "Als neues Projekt importieren"
 #: projects/templates/projects/projects.html:57
 msgid "My Projects"
 msgstr "Meine Projekte"
-
-#: projects/templates/projects/projects.html:65
-#: projects/templates/projects/site_projects.html:40
-#, fuzzy
-#| msgid "Last name"
-msgid "Last changed"
-msgstr "Nachname"
 
 #: projects/templates/projects/projects_pagination.html:7
 #: projects/templates/projects/projects_pagination.html:9
