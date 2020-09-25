@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: RDMO\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-02 12:53+0200\n"
+"POT-Creation-Date: 2020-09-25 12:29+0200\n"
 "PO-Revision-Date: 2020-09-02 12:57+0200\n"
 "Last-Translator: Jochen Klar <jklar@aip.de>\n"
 "Language-Team: RDMO <rdmo-team@listserv.dfn.de>\n"
@@ -193,8 +193,8 @@ msgid "The sites for which this user is manager."
 msgstr "Die Seiten bei denen dieser Benutzer Manager ist."
 
 #: accounts/models.py:152 projects/models.py:155
-#: projects/templates/projects/project_detail_memberships.html:14
-#: projects/templates/projects/projects.html:63
+#: projects/templates/projects/project_detail_memberships.html:19
+#: projects/templates/projects/projects.html:54
 msgid "Role"
 msgstr "Rolle"
 
@@ -320,7 +320,7 @@ msgstr ""
 #: accounts/templates/account/login.html:6
 #: accounts/templates/account/login_form.html:20
 #: accounts/templates/account/password_reset_from_key_done.html:14
-#: core/templates/core/base_navigation.html:138
+#: core/templates/core/base_navigation.html:141
 #: core/templates/core/home.html:55
 msgid "Login"
 msgstr "Anmelden"
@@ -355,7 +355,7 @@ msgstr "Sie können sich auch mit einem der folgenden Accounts anmelden:"
 #: accounts/templates/account/logout.html:6
 #: accounts/templates/account/logout.html:19
 #: accounts/templates/account/logout_form.html:6
-#: core/templates/core/base_navigation.html:127
+#: core/templates/core/base_navigation.html:130
 msgid "Logout"
 msgstr "Abmelden"
 
@@ -633,7 +633,7 @@ msgstr "Es tut uns Leid, aber sie können Ihr Profil hier nicht bearbeiten."
 
 #: accounts/templates/profile/profile_update_form.html:6
 #: accounts/templates/profile/profile_update_form.html:24
-#: core/templates/core/base_navigation.html:105
+#: core/templates/core/base_navigation.html:108
 msgid "Update profile"
 msgstr "Profil bearbeiten"
 
@@ -721,7 +721,7 @@ msgstr ""
 "%(site_name)s anzumelden. Es sind noch zusätzliche Angaben von Ihnen nötig:"
 
 #: accounts/templatetags/accounts_tags.py:19
-#: projects/templates/projects/projects.html:62
+#: projects/templates/projects/projects.html:53
 #: projects/templates/projects/site_projects.html:38
 msgid "Name"
 msgstr "Name"
@@ -729,7 +729,7 @@ msgstr "Name"
 #: conditions/apps.py:7 conditions/models.py:77
 #: conditions/templates/conditions/conditions.html:90
 #: conditions/templates/conditions/conditions_export.html:6
-#: conditions/views.py:43 core/templates/core/base_navigation.html:49
+#: conditions/views.py:43 core/templates/core/base_navigation.html:52
 #: domain/templates/domain/domain_modal_show_attributes.html:18
 #: options/models.py:40 options/templates/options/options_export.html:39
 #: options/templates/options/options_modal_form_conditions.html:11
@@ -854,6 +854,7 @@ msgstr "Bedingungen filtern"
 #: conditions/templates/conditions/conditions.html:31
 #: domain/templates/domain/domain.html:31
 #: options/templates/options/options.html:31
+#: projects/templates/projects/projects.html:22
 #: questions/templates/questions/catalogs_sidebar.html:16
 #: tasks/templates/tasks/tasks.html:32 views/templates/views/views.html:31
 msgid "Search"
@@ -868,7 +869,7 @@ msgid "All URI prefixes"
 msgstr "Alle URI Prefixe"
 
 #: conditions/templates/conditions/conditions.html:49
-#: core/templates/core/base_navigation.html:44
+#: core/templates/core/base_navigation.html:47
 #: domain/templates/domain/domain.html:49 options/apps.py:7
 #: options/models.py:147 options/templates/options/options.html:49
 #: options/templates/options/options.html:96
@@ -876,7 +877,7 @@ msgstr "Alle URI Prefixe"
 #: projects/templates/projects/project_answers.html:28
 #: projects/templates/projects/project_detail_sidebar.html:5
 #: projects/templates/projects/project_view.html:28
-#: projects/templates/projects/projects.html:27
+#: projects/templates/projects/projects.html:15
 #: projects/templates/projects/site_projects.html:22
 #: questions/templates/questions/catalog_tree.html:80
 #: questions/templates/questions/catalogs_sidebar.html:34
@@ -892,7 +893,7 @@ msgstr "Neue Bedingung erstellen"
 #: domain/templates/domain/domain.html:59
 #: options/templates/options/options.html:64
 #: projects/templates/projects/project_answers.html:36
-#: projects/templates/projects/project_detail_sidebar.html:70
+#: projects/templates/projects/project_detail_sidebar.html:15
 #: projects/templates/projects/project_view.html:36
 #: questions/templates/questions/catalogs_sidebar.html:77
 #: tasks/templates/tasks/tasks.html:60 views/templates/views/views.html:59
@@ -1020,6 +1021,7 @@ msgstr "Standard URI Prefix einsetzen"
 #: options/templates/options/options_modal_form_options.html:161
 #: options/templates/options/options_modal_form_optionsets.html:98
 #: projects/templates/projects/project_questions.html:71
+#: projects/templates/projects/project_questions_buttons.html:8
 #: projects/templates/projects/project_questions_modal_form_valuesets.html:32
 #: questions/templates/questions/catalogs_modal_form_catalogs.html:209
 #: questions/templates/questions/catalogs_modal_form_questions.html:359
@@ -1071,7 +1073,7 @@ msgid "Question sets"
 msgstr "Fragensets"
 
 #: conditions/templates/conditions/conditions_modal_show_conditions.html:38
-#: core/templates/core/base_navigation.html:34
+#: core/templates/core/base_navigation.html:37
 #: domain/templates/domain/domain_modal_show_attributes.html:38
 #: questions/apps.py:7 questions/models.py:674
 #: questions/templates/questions/catalogs.html:37
@@ -1079,7 +1081,8 @@ msgid "Questions"
 msgstr "Fragen"
 
 #: conditions/templates/conditions/conditions_modal_show_conditions.html:48
-#: core/templates/core/base_navigation.html:54 projects/models.py:54
+#: core/templates/core/base_navigation.html:57 projects/models.py:54
+#: projects/templates/projects/project_detail_issues.html:3
 #: projects/templates/projects/project_detail_tasks.html:3 tasks/apps.py:7
 #: tasks/models.py:136 tasks/templates/tasks/tasks.html:92
 #: tasks/templates/tasks/tasks_export.html:6 tasks/views.py:43
@@ -1195,33 +1198,33 @@ msgstr "Die gewünschte URL konnte nicht gefunden werden."
 msgid "RDMO Logo"
 msgstr "RDMO Logo"
 
-#: core/templates/core/base_navigation.html:29 management/apps.py:7
+#: core/templates/core/base_navigation.html:32 management/apps.py:7
 msgid "Management"
 msgstr "Management"
 
-#: core/templates/core/base_navigation.html:39 domain/apps.py:7
+#: core/templates/core/base_navigation.html:42 domain/apps.py:7
 #: domain/templates/domain/domain.html:103
 #: domain/templates/domain/domain_export.html:6 domain/views.py:55
 #: domain/views.py:57
 msgid "Domain"
 msgstr "Domäne"
 
-#: core/templates/core/base_navigation.html:59 projects/models.py:59
+#: core/templates/core/base_navigation.html:62 projects/models.py:59
 #: projects/templates/projects/project_detail_views.html:3 views/apps.py:7
 #: views/models.py:118 views/templates/views/views.html:91
 #: views/templates/views/views_export.html:6 views/views.py:43
 msgid "Views"
 msgstr "Ansichten"
 
-#: core/templates/core/base_navigation.html:67
+#: core/templates/core/base_navigation.html:70
 msgid "Admin"
 msgstr "Admin"
 
-#: core/templates/core/base_navigation.html:80
+#: core/templates/core/base_navigation.html:83
 msgid "Language"
 msgstr "Sprache"
 
-#: core/templates/core/base_navigation.html:96
+#: core/templates/core/base_navigation.html:99
 msgid "About RDMO"
 msgstr "Über RDMO"
 
@@ -1233,11 +1236,7 @@ msgstr "E-Mail bearbeiten"
 msgid "Contact"
 msgstr "Kontakt"
 
-#: core/templates/core/footer_contact.html:10
-msgid "Open Source"
-msgstr "Open Source"
-
-#: core/templates/core/footer_contact.html:12
+#: core/templates/core/footer_contact.html:4
 msgid "RDMO is published on:"
 msgstr "RDMO ist veröffentlicht auf:"
 
@@ -1460,6 +1459,7 @@ msgstr "%(foreign_uri)s %(foreign_model)s existiert nicht."
 
 #: management/templates/management/import.html:69
 #: projects/templates/projects/project_questions.html:80
+#: projects/templates/projects/project_questions_buttons.html:26
 msgid "Back"
 msgstr "Zurück"
 
@@ -1734,7 +1734,7 @@ msgid "Username or email"
 msgstr "Benutzername oder E-Mail"
 
 #: projects/forms.py:122 projects/models.py:29 projects/models.py:150
-#: projects/templates/projects/project_detail_memberships.html:12
+#: projects/templates/projects/project_detail_memberships.html:17
 msgid "User"
 msgstr "Benutzer"
 
@@ -1762,27 +1762,19 @@ msgstr "Standort"
 msgid "The site this project belongs to (in a multi site setup)."
 msgstr "Die Site, zu der dieses Projekt gehört (in einem Multi-Standort-Setup)"
 
-#: projects/models.py:39 projects/models.py:183
-#: projects/templates/projects/project_questions_modal_form_valuesets.html:19
-#: projects/templates/projects/project_upload.html:26
-#: projects/templates/projects/project_upload.html:101
-#: questions/templates/questions/catalogs_modal_form_catalogs.html:156
-#: questions/templates/questions/catalogs_modal_form_questionsets.html:194
-#: questions/templates/questions/catalogs_modal_form_sections.html:144
-#: tasks/templates/tasks/tasks_export.html:25
-#: tasks/templates/tasks/tasks_modal_form_tasks.html:149
-#: views/templates/views/views_export.html:25
-#: views/templates/views/views_modal_form_views.html:158
-msgid "Title"
-msgstr "Titel"
+#: projects/models.py:39
+msgid "Working title"
+msgstr "Arbeitstitel"
 
 #: projects/models.py:40
-msgid "The title for this project."
-msgstr "Der Titel für dieses Projekt."
+msgid "The working title for this project."
+msgstr "Der Arbeitstitel für dieses Projekt."
 
 #: projects/models.py:44 projects/models.py:188
-#: projects/templates/projects/project_detail.html:16
-#: projects/templates/projects/project_detail_snapshots.html:14
+#: projects/templates/projects/project_detail.html:18
+#: projects/templates/projects/project_detail.html:28
+#: projects/templates/projects/project_detail_issues.html:10
+#: projects/templates/projects/project_detail_snapshots.html:18
 #: projects/templates/projects/project_detail_tasks.html:10
 #: projects/templates/projects/project_detail_views.html:10
 #: projects/templates/projects/project_upload.html:29
@@ -1794,9 +1786,10 @@ msgstr "Beschreibung"
 msgid "A description for this project (optional)."
 msgstr "Eine Beschreibung für dieses Projekt (optional)."
 
-#: projects/models.py:49 projects/templates/projects/project_upload.html:32
-#: questions/models.py:117 questions/models.py:185
-#: questions/templates/questions/catalog_tree.html:3
+#: projects/models.py:49 projects/templates/projects/project_detail.html:24
+#: projects/templates/projects/project_detail.html:34
+#: projects/templates/projects/project_upload.html:32 questions/models.py:117
+#: questions/models.py:185 questions/templates/questions/catalog_tree.html:3
 #: questions/templates/questions/catalogs_modal_delete_catalogs.html:11
 #: questions/templates/questions/catalogs_sidebar.html:5
 msgid "Catalog"
@@ -1855,6 +1848,20 @@ msgstr "Mitgliedschaften"
 msgid "The project this snapshot belongs to."
 msgstr "Das Projekt zu dem dieser Snapshot gehört."
 
+#: projects/models.py:183
+#: projects/templates/projects/project_questions_modal_form_valuesets.html:19
+#: projects/templates/projects/project_upload.html:26
+#: projects/templates/projects/project_upload.html:101
+#: questions/templates/questions/catalogs_modal_form_catalogs.html:156
+#: questions/templates/questions/catalogs_modal_form_questionsets.html:194
+#: questions/templates/questions/catalogs_modal_form_sections.html:144
+#: tasks/templates/tasks/tasks_export.html:25
+#: tasks/templates/tasks/tasks_modal_form_tasks.html:149
+#: views/templates/views/views_export.html:25
+#: views/templates/views/views_modal_form_views.html:158
+msgid "Title"
+msgstr "Titel"
+
 #: projects/models.py:184
 msgid "The title for this snapshot."
 msgstr "Der Titel für diesen Snapshot."
@@ -1864,12 +1871,13 @@ msgid "A description for this snapshot (optional)."
 msgstr "Eine Beschreibung für diesen Snapshot (optional)."
 
 #: projects/models.py:194 projects/models.py:243
-#: projects/templates/projects/project_detail_snapshots.html:13
+#: projects/templates/projects/project_detail_snapshots.html:17
 msgid "Snapshot"
 msgstr "Snapshot"
 
 #: projects/models.py:195 projects/templates/projects/project_answers.html:9
-#: projects/templates/projects/project_detail_snapshots.html:7
+#: projects/templates/projects/project_detail_snapshots.html:9
+#: projects/templates/projects/project_detail_snapshots.html:11
 #: projects/templates/projects/project_upload.html:92
 #: projects/templates/projects/project_view.html:9
 msgid "Snapshots"
@@ -1963,9 +1971,16 @@ msgstr "Set"
 msgid "sets"
 msgstr "Sets"
 
+#: projects/templates/projects/issue_form.html:7
+#: projects/templates/projects/issue_form.html:9
+#: tasks/templates/tasks/tasks.html:104
+#: tasks/templates/tasks/tasks_modal_form_tasks.html:14
+msgid "Update task"
+msgstr "Aufgabe bearbeiten"
+
 #: projects/templates/projects/membership_confirm_delete.html:8
 #: projects/templates/projects/membership_confirm_delete.html:17
-#: projects/templates/projects/project_detail_memberships.html:37
+#: projects/templates/projects/project_detail_memberships.html:42
 msgid "Delete membership"
 msgstr "Mitgliedschaft entfernen"
 
@@ -1980,7 +1995,7 @@ msgstr ""
 
 #: projects/templates/projects/membership_form.html:9
 #: projects/templates/projects/membership_form.html:11
-#: projects/templates/projects/project_detail_memberships.html:31
+#: projects/templates/projects/project_detail_memberships.html:36
 msgid "Update membership"
 msgstr "Mitgliedschaft bearbeiten"
 
@@ -1989,7 +2004,6 @@ msgid "Add member to project"
 msgstr "Mitglied zu Projekt hinzufügen"
 
 #: projects/templates/projects/membership_form.html:17
-#: projects/templates/projects/project_detail_sidebar.html:55
 msgid "Add member"
 msgstr "Mitglied hinzufügen"
 
@@ -2020,7 +2034,6 @@ msgstr ""
 
 #: projects/templates/projects/project_confirm_delete.html:7
 #: projects/templates/projects/project_confirm_delete.html:17
-#: projects/templates/projects/project_detail_sidebar.html:24
 msgid "Delete project"
 msgstr "Projekt entfernen"
 
@@ -2031,77 +2044,12 @@ msgid ""
 msgstr ""
 "Sie sind dabei das Projekt <code>%(object)s</code> permanent zu entfernen."
 
-#: projects/templates/projects/project_detail.html:24
+#: projects/templates/projects/project_detail.html:22
+#: projects/templates/projects/project_detail.html:32
 msgid "No description available."
 msgstr "Keine Beschreibung vorhanden."
 
-#: projects/templates/projects/project_detail_memberships.html:9
-msgid "Members"
-msgstr "Mitgliedschaften"
-
-#: projects/templates/projects/project_detail_memberships.html:13
-msgid "E-Mail"
-msgstr "E-Mail"
-
-#: projects/templates/projects/project_detail_sidebar.html:13
-msgid "Update project information"
-msgstr "Projektinformationen bearbeiten"
-
-#: projects/templates/projects/project_detail_sidebar.html:16
-msgid "Update project tasks"
-msgstr "Projekt Aufgaben bearbeiten"
-
-#: projects/templates/projects/project_detail_sidebar.html:19
-#: projects/templates/projects/project_form.html:11
-msgid "Update project views"
-msgstr "Projekt Ansichten bearbeiten"
-
-#: projects/templates/projects/project_detail_sidebar.html:32
-msgid "Answer questions"
-msgstr "Fragen beantworten"
-
-#: projects/templates/projects/project_detail_sidebar.html:38
-#: projects/templates/projects/project_detail_snapshots.html:32
-#: projects/templates/projects/project_questions_done.html:9
-msgid "View answers"
-msgstr "Antworten anzeigen"
-
-#: projects/templates/projects/project_detail_sidebar.html:46
-#: projects/templates/projects/snapshot_form.html:17
-msgid "Create snapshot"
-msgstr "Snapshot erstellen"
-
-#: projects/templates/projects/project_detail_sidebar.html:62
-msgid "Back to projects overview"
-msgstr "Zurück zu den Projekten"
-
-#: projects/templates/projects/project_detail_sidebar.html:85
-msgid "Import values from file"
-msgstr "Werte aus Datei importieren"
-
-#: projects/templates/projects/project_detail_snapshots.html:15
-#: projects/templates/projects/project_upload.html:35
-#: projects/templates/projects/project_upload.html:107
-#: projects/templates/projects/projects.html:64
-#: projects/templates/projects/site_projects.html:39
-msgid "Created"
-msgstr "Erstellt"
-
-#: projects/templates/projects/project_detail_snapshots.html:36
-#: projects/templates/projects/snapshot_form.html:9
-#: projects/templates/projects/snapshot_form.html:11
-msgid "Update snapshot"
-msgstr "Snapshot bearbeiten"
-
-#: projects/templates/projects/project_detail_snapshots.html:41
-#: projects/templates/projects/snapshot_rollback.html:7
-msgid "Rollback to snapshot"
-msgstr "Auf Snapshot zurücksetzen"
-
-#: projects/templates/projects/project_detail_snapshots.html:52
-msgid "No snapshots found."
-msgstr "Keine Snapshots gefunden."
-
+#: projects/templates/projects/project_detail_issues.html:9
 #: projects/templates/projects/project_detail_tasks.html:9 tasks/models.py:135
 #: tasks/templates/tasks/tasks.html:128
 #: tasks/templates/tasks/tasks_export.html:10
@@ -2109,14 +2057,84 @@ msgstr "Keine Snapshots gefunden."
 msgid "Task"
 msgstr "Aufgabe"
 
+#: projects/templates/projects/project_detail_issues.html:11
 #: projects/templates/projects/project_detail_tasks.html:11
 #: tasks/templates/tasks/tasks_export.html:33
 msgid "Time frame"
 msgstr "Zeitraum"
 
-#: projects/templates/projects/project_detail_tasks.html:34
+#: projects/templates/projects/project_detail_issues.html:12
+msgid "Status"
+msgstr ""
+
+#: projects/templates/projects/project_detail_issues.html:32
+#: views/templates/views/views.html:103
+#: views/templates/views/views_modal_form_views.html:14
+msgid "Update view"
+msgstr "Ansicht bearbeiten"
+
+#: projects/templates/projects/project_detail_issues.html:42
 msgid "No active tasks found."
 msgstr "Keine aktiven Aufgaben gefunden."
+
+#: projects/templates/projects/project_detail_memberships.html:11
+#: projects/templates/projects/project_detail_memberships.html:13
+msgid "Members"
+msgstr "Mitgliedschaften"
+
+#: projects/templates/projects/project_detail_memberships.html:18
+msgid "E-Mail"
+msgstr "E-Mail"
+
+#: projects/templates/projects/project_detail_sidebar.html:8
+msgid "Answer questions"
+msgstr "Fragen beantworten"
+
+#: projects/templates/projects/project_detail_sidebar.html:11
+msgid "Back to projects overview"
+msgstr "Zurück zu den Projekten"
+
+#: projects/templates/projects/project_detail_sidebar.html:30
+msgid "Import values from file"
+msgstr "Werte aus Datei importieren"
+
+#: projects/templates/projects/project_detail_snapshots.html:19
+#: projects/templates/projects/project_upload.html:35
+#: projects/templates/projects/project_upload.html:107
+#: projects/templates/projects/projects.html:55
+#: projects/templates/projects/site_projects.html:39
+msgid "Created"
+msgstr "Erstellt"
+
+#: projects/templates/projects/project_detail_snapshots.html:36
+#: projects/templates/projects/project_questions_done.html:9
+msgid "View answers"
+msgstr "Antworten anzeigen"
+
+#: projects/templates/projects/project_detail_snapshots.html:40
+#: projects/templates/projects/snapshot_form.html:9
+#: projects/templates/projects/snapshot_form.html:11
+msgid "Update snapshot"
+msgstr "Snapshot bearbeiten"
+
+#: projects/templates/projects/project_detail_snapshots.html:45
+#: projects/templates/projects/snapshot_rollback.html:7
+msgid "Rollback to snapshot"
+msgstr "Auf Snapshot zurücksetzen"
+
+#: projects/templates/projects/project_detail_snapshots.html:56
+msgid "No snapshots found."
+msgstr "Keine Snapshots gefunden."
+
+#: projects/templates/projects/project_detail_tasks.html:34
+msgid ""
+"No active tasks found. Please first answer the questions in the question "
+"catalog by selecting \"Answer questions\". From your answers the necessary "
+"tasks will be generated."
+msgstr ""
+"Keine aktiven Aufgaben gefunden. Bitte beantworten Sie zunächst die Fragen "
+"im Fragenkatalog, indem Sie „Fragen beantworten“ auswählen. Aus Ihren "
+"Antworten werden die notwendigen Aufgaben für Sie generiert."
 
 #: projects/templates/projects/project_detail_views.html:9 views/models.py:117
 #: views/templates/views/views.html:124
@@ -2148,6 +2166,10 @@ msgstr ""
 msgid "You will be redirected shortly."
 msgstr "Sie werden in Kürze weitergeleitet."
 
+#: projects/templates/projects/project_form.html:11
+msgid "Update project views"
+msgstr "Projekt Ansichten bearbeiten"
+
 #: projects/templates/projects/project_form.html:12
 msgid "Save views"
 msgstr "Ansichten speichern"
@@ -2161,7 +2183,7 @@ msgid "Save project"
 msgstr "Projekt speichern"
 
 #: projects/templates/projects/project_form.html:22
-#: projects/templates/projects/projects.html:31
+#: projects/templates/projects/projects.html:18
 msgid "Create new project"
 msgstr "Neues Projekt erstellen"
 
@@ -2169,30 +2191,38 @@ msgstr "Neues Projekt erstellen"
 msgid "Create project"
 msgstr "Neues Projekt erstellen"
 
+#: projects/templates/projects/project_questions.html:39
+msgid "Questionnaire"
+msgstr "Fragebogen"
+
 #: projects/templates/projects/project_questions.html:74
+#: projects/templates/projects/project_questions_buttons.html:12
 msgid "Save and proceed"
 msgstr "Sichern und fortfahren"
 
 #: projects/templates/projects/project_questions.html:83
+#: projects/templates/projects/project_questions_buttons.html:30
 msgid "Skip"
 msgstr "Überspringen"
 
-#: projects/templates/projects/project_questions_add_field_button.html:6
-#: projects/templates/projects/project_questions_questionset_head.html:15
-#: projects/templates/projects/project_questions_questionset_head.html:36
+#: projects/templates/projects/project_questions_add_field_button.html:7
 #, python-format
-msgid "Add %(name)s"
-msgstr "%(name)s hinzufügen"
+msgid "Add additional %(name)s"
+msgstr "Weitere/s/n %(name)s hinzufügen"
 
 #: projects/templates/projects/project_questions_add_field_help.html:4
 #, python-format
 msgid ""
 "Please enter the %(name_plural)s line by line. You can add %(name_plural)s "
-"using the green button and remove them using the red cross (&times;)."
+"using the green button and remove them using the blue cross (&times;)."
 msgstr ""
 "Bitte nutzen Sie für die %(name_plural)s jeweils eine eigene Zeile. Sie "
 "können weitere %(name_plural)s mit dem grünen Button hinzufügen und mit dem "
 "blauen Kreuz (&times;) entfernen."
+
+#: projects/templates/projects/project_questions_buttons.html:18
+msgid "Proceed"
+msgstr ""
 
 #: projects/templates/projects/project_questions_done.html:5
 msgid "Thank you for filling out the questionnaire."
@@ -2234,6 +2264,7 @@ msgid "Please give the %(name)s a meaningful name."
 msgstr "Bitte geben Sie dem %(name)s einen aus­sa­ge­kräf­tigen Namen."
 
 #: projects/templates/projects/project_questions_questionset_head.html:7
+#: projects/templates/projects/project_questions_questionset_head_help.html:4
 #, python-format
 msgid ""
 "Please fill in the form for each %(name)s. The different %(name_plural)s "
@@ -2246,6 +2277,12 @@ msgstr ""
 "können einen neuen %(name)s mit dem grünen Button hinzufügen. Bereits "
 "angelegte %(name_plural)s können mit den Buttons oben rechts bearbeitet oder "
 "wieder entfernt werden."
+
+#: projects/templates/projects/project_questions_questionset_head.html:15
+#: projects/templates/projects/project_questions_questionset_head.html:36
+#, python-format
+msgid "Add %(name)s"
+msgstr "%(name)s hinzufügen"
 
 #: projects/templates/projects/project_questions_questionset_head.html:43
 #, python-format
@@ -2266,32 +2303,14 @@ msgstr "Übersicht"
 msgid "Progress"
 msgstr "Fortschritt"
 
-#: projects/templates/projects/project_questions_sidebar.html:24
-msgid "Navigation"
-msgstr "Navigation"
-
-#: projects/templates/projects/project_questions_sidebar.html:27
-msgid "Please note that using the navigation will discard any usaved input."
-msgstr ""
-"Bitte beachten sie das durch die Benutzung der Navigation ungesicherte "
-"Eingaben verworfen werden."
-
-#: projects/templates/projects/project_questions_sidebar.html:33
-#, fuzzy
-#| msgid "skip to previous page"
-msgid "Skip to previous page"
-msgstr "Zur vorherigen Frage springen"
-
-#: projects/templates/projects/project_questions_sidebar.html:38
-#, fuzzy
-#| msgid "skip to next page"
-msgid "Skip to next page"
-msgstr "Zur nächsten Frage springen"
-
-#: projects/templates/projects/project_questions_sidebar.html:64
+#: projects/templates/projects/project_questions_sidebar.html:26
 #: projects/templates/projects/site_projects.html:26
 msgid "Back to my projects"
 msgstr "Zurück zu meinen Projekten"
+
+#: projects/templates/projects/project_questions_sidebar.html:30
+msgid "Navigation"
+msgstr "Navigation"
 
 #: projects/templates/projects/project_upload.html:20
 #, python-format
@@ -2361,32 +2380,28 @@ msgstr ""
 "Beim Erstellen der Ansicht ist ein Fehler aufgetreten. Bitte kontaktieren "
 "Sie den Support."
 
-#: projects/templates/projects/projects.html:16
-msgid "My Data"
-msgstr "Meine Daten"
-
-#: projects/templates/projects/projects.html:20
-#: projects/templates/projects/site_projects.html:15
-msgid "Search projects"
-msgstr "Projekt suchen"
-
-#: projects/templates/projects/projects.html:23
+#: projects/templates/projects/projects.html:24
 #: projects/templates/projects/site_projects.html:18
 msgid "Search project title"
 msgstr "Suche nach Projekttitel"
 
-#: projects/templates/projects/projects.html:39
+#: projects/templates/projects/projects.html:31
 #, python-format
 msgid "View all projects on %(site)s"
 msgstr "Alle Projekte auf %(site)s anzeigen"
 
-#: projects/templates/projects/projects.html:45
+#: projects/templates/projects/projects.html:37
 msgid "Import as new project"
 msgstr "Als neues Projekt importieren"
 
-#: projects/templates/projects/projects.html:57
+#: projects/templates/projects/projects.html:49
 msgid "My Projects"
 msgstr "Meine Projekte"
+
+#: projects/templates/projects/projects.html:56
+#: projects/templates/projects/site_projects.html:40
+msgid "Last changed"
+msgstr "Zuletzt geändert"
 
 #: projects/templates/projects/projects_pagination.html:7
 #: projects/templates/projects/projects_pagination.html:9
@@ -2403,6 +2418,10 @@ msgstr "Seite %(number)s von %(num_pages)s."
 msgid "Next"
 msgstr "Nächste"
 
+#: projects/templates/projects/site_projects.html:15
+msgid "Search projects"
+msgstr "Projekt suchen"
+
 #: projects/templates/projects/site_projects.html:33
 #, python-format
 msgid "All projects on %(site)s"
@@ -2411,6 +2430,10 @@ msgstr "Alle Projekte auf %(site)s"
 #: projects/templates/projects/snapshot_form.html:15
 msgid "Create new snapshot"
 msgstr "Neuen Snapshot erstellen"
+
+#: projects/templates/projects/snapshot_form.html:17
+msgid "Create snapshot"
+msgstr "Snapshot erstellen"
 
 #: projects/templates/projects/snapshot_rollback.html:10
 #, python-format
@@ -3396,11 +3419,6 @@ msgstr "Aufgaben filtern"
 msgid "Create new task"
 msgstr "Neue Aufgabe erstellen"
 
-#: tasks/templates/tasks/tasks.html:104
-#: tasks/templates/tasks/tasks_modal_form_tasks.html:14
-msgid "Update task"
-msgstr "Aufgabe bearbeiten"
-
 #: tasks/templates/tasks/tasks.html:108
 #: tasks/templates/tasks/tasks_modal_form_tasks.html:13
 msgid "Copy task"
@@ -3551,11 +3569,6 @@ msgstr "Ansichten filtern"
 msgid "Create new view"
 msgstr "Neue Ansicht erstellen"
 
-#: views/templates/views/views.html:103
-#: views/templates/views/views_modal_form_views.html:14
-msgid "Update view"
-msgstr "Ansicht bearbeiten"
-
 #: views/templates/views/views.html:107
 #: views/templates/views/views_modal_form_views.html:13
 msgid "Copy view"
@@ -3621,37 +3634,44 @@ msgstr ""
 "Eine leere Liste bedeutet, dass die Ansicht mit jedem Katalog verwendet "
 "werden kann."
 
-msgid "Working title"
-msgstr "Arbeitstitel"
+#~ msgid "Open Source"
+#~ msgstr "Open Source"
 
-msgid "The working title for this project."
-msgstr "Der Arbeitstitel für dieses Projekt."
+#~ msgid "The title for this project."
+#~ msgstr "Der Titel für dieses Projekt."
 
-msgid ""
-"No active tasks found. Please first answer the questions in the question "
-"catalog by selecting \"Answer questions\". From your answers the necessary "
-"tasks will be generated."
-msgstr ""
-"Keine aktiven Aufgaben gefunden. Bitte beantworten Sie zunächst die Fragen "
-"im Fragenkatalog, indem Sie „Fragen beantworten“ auswählen. Aus Ihren "
-"Antworten werden die notwendigen Aufgaben für Sie generiert."
+#~ msgid "Update project information"
+#~ msgstr "Projektinformationen bearbeiten"
 
-msgid "Add additional %(name)s"
-msgstr "Weitere/s/n %(name)s hinzufügen"
+#~ msgid "Update project tasks"
+#~ msgstr "Projekt Aufgaben bearbeiten"
 
-msgid ""
-"Please enter the %(name_plural)s line by line. You can add %(name_plural)s "
-"using the green button and remove them using the blue cross (&times;)."
-msgstr ""
-"Bitte nutzen Sie für die %(name_plural)s jeweils eine eigene Zeile. Sie "
-"können weitere %(name_plural)s mit dem grünen Button hinzufügen und mit dem "
-"blauen Kreuz (&times;) entfernen."
+#~ msgid ""
+#~ "Please enter the %(name_plural)s line by line. You can add "
+#~ "%(name_plural)s using the green button and remove them using the red "
+#~ "cross (&times;)."
+#~ msgstr ""
+#~ "Bitte nutzen Sie für die %(name_plural)s jeweils eine eigene Zeile. Sie "
+#~ "können weitere %(name_plural)s mit dem grünen Button hinzufügen und mit "
+#~ "dem blauen Kreuz (&times;) entfernen."
 
-msgid "Last changed"
-msgstr "Zuletzt geändert"
+#~ msgid "Please note that using the navigation will discard any usaved input."
+#~ msgstr ""
+#~ "Bitte beachten sie das durch die Benutzung der Navigation ungesicherte "
+#~ "Eingaben verworfen werden."
 
-msgid "Questionnaire"
-msgstr "Fragebogen"
+#, fuzzy
+#~| msgid "skip to previous page"
+#~ msgid "Skip to previous page"
+#~ msgstr "Zur vorherigen Frage springen"
+
+#, fuzzy
+#~| msgid "skip to next page"
+#~ msgid "Skip to next page"
+#~ msgstr "Zur nächsten Frage springen"
+
+#~ msgid "My Data"
+#~ msgstr "Meine Daten"
 
 #~ msgid "Questionnaire for project <em>{$ service.project.title $}</em>"
 #~ msgstr "Fragebogen für Projekt <em>{$ service.project.title $}</em>"
