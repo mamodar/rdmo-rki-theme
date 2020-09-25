@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: RDMO\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-23 10:20+0200\n"
+"POT-Creation-Date: 2020-09-25 09:54+0200\n"
 "PO-Revision-Date: 2020-09-08 13:57+0200\n"
 "Last-Translator: Jochen Klar <jklar@aip.de>\n"
 "Language-Team: RDMO <rdmo-team@listserv.dfn.de>\n"
@@ -1522,20 +1522,7 @@ msgstr "Standort"
 msgid "The site this project belongs to (in a multi site setup)."
 msgstr "Die Site, zu der dieses Projekt gehört (in einem Multi-Standort-Setup)"
 
-#: projects/models.py:37 projects/models.py:148
-#: projects/templates/projects/project_questions_modal_form_valuesets.html:19
-#: projects/templates/projects/project_upload.html:26
-#: projects/templates/projects/project_upload.html:101
-#: questions/templates/questions/catalogs_modal_form_catalogs.html:139
-#: questions/templates/questions/catalogs_modal_form_questionsets.html:182
-#: questions/templates/questions/catalogs_modal_form_sections.html:132
-#: tasks/templates/tasks/tasks_export.html:25
-#: tasks/templates/tasks/tasks_modal_form_tasks.html:123
-#: views/templates/views/views_export.html:25
-#: views/templates/views/views_modal_form_views.html:130
-msgid "Title"
-msgstr "Titel"
-
+#: projects/models.py:37
 msgid "Working title"
 msgstr "Arbeitstitel"
 
@@ -1621,6 +1608,20 @@ msgstr "Mitgliedschaften"
 #: projects/models.py:144
 msgid "The project this snapshot belongs to."
 msgstr "Das Projekt zu dem dieser Snapshot gehört."
+
+#: projects/models.py:148
+#: projects/templates/projects/project_questions_modal_form_valuesets.html:19
+#: projects/templates/projects/project_upload.html:26
+#: projects/templates/projects/project_upload.html:101
+#: questions/templates/questions/catalogs_modal_form_catalogs.html:139
+#: questions/templates/questions/catalogs_modal_form_questionsets.html:182
+#: questions/templates/questions/catalogs_modal_form_sections.html:132
+#: tasks/templates/tasks/tasks_export.html:25
+#: tasks/templates/tasks/tasks_modal_form_tasks.html:123
+#: views/templates/views/views_export.html:25
+#: views/templates/views/views_modal_form_views.html:130
+msgid "Title"
+msgstr "Titel"
 
 #: projects/models.py:149
 msgid "The title for this snapshot."
@@ -1978,6 +1979,7 @@ msgid "Add additional %(name)s"
 msgstr "Weitere/s/n %(name)s hinzufügen"
 
 #: projects/templates/projects/project_questions_add_field_help.html:4
+#, python-format
 msgid ""
 "Please enter the %(name_plural)s line by line. You can add %(name_plural)s "
 "using the green button and remove them using the blue cross (&times;)."
