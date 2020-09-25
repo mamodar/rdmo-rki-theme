@@ -2,7 +2,7 @@
 {% load i18n %}
 {% load rules %}
 {% load core_tags %}
-
+<!-- CHANGE add update project to corresponding titles-->
 {% block sidebar %}
 
     {% include 'projects/project_detail_sidebar.html' %}
@@ -12,6 +12,7 @@
 {% block page %}
 
     {% has_perm 'projects.change_project_object' request.user project as can_change_project %}
+
     {% if can_change_project %}
         <h1>{{ project.title }} </h1>
         <h2>{% trans 'Description' %}  <a  style = "font-size: large" href="{% url 'project_update' project.pk %}"  class="fa fa-pencil"></a></h2>
