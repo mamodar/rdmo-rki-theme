@@ -11,7 +11,7 @@ This project aims at  improving the UI and UX of RDMO. It also adapts the RKI th
 4. Remove all files in `rdmo-app/theme`
 5. Copy all files from `rdmo-rki-theme/theme` into `rdmo-app/theme`, overwrite
 6. Copy all files from `rdmo-rki-theme/local` into `rdmo-app/env/lib/python3.6/site-packages/rdmo/local`, overwrite
-7. Copy all files from `rdmo-rki-theme/projects` into `rdmo-app/env/lib/python3.6/site-packages/rdmo/projects`, overwrite
+7. Copy all files and folders from `rdmo-rki-theme/projects` into `rdmo-app/env/lib/python3.6/site-packages/rdmo/projects`, overwrite
 
 
 Repeat step 3. to 7. whenever the theme or RDMO is updated.

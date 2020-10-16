@@ -331,6 +331,18 @@ li.has-warning > a.control-label > i {
     background-color: $link-color !important;
 }
 
+.btn-import {
+    margin-top: 70px;
+    width: 100%;
+    display: block;
+}
+
+.cc-myself {
+    .checkbox {
+        margin: 0;
+    }
+}
+
 .import-submit {
     margin-top: 70px;
     width: 100%;
