@@ -32,7 +32,8 @@
         <p>{% trans 'No description available.' %}</p>
         {% endif %}
         <h2>{% trans 'Catalog' %}</h2>
-        <p>{{project.catalog.title}} <p>
+        <p><strong>{{ project.catalog.title }}</strong></p>
+        {{ project.catalog.help|markdown }}
     {% endif %}
     {% include 'projects/project_detail_issues.html' %}
     {% include 'projects/project_detail_views.html' %}
