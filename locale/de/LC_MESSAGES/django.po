@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: RDMO\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-10 11:52+0100\n"
+"POT-Creation-Date: 2020-12-16 18:12+0100\n"
 "PO-Revision-Date: 2020-12-10 11:52+0100\n"
 "Last-Translator: Jochen Klar <jklar@aip.de>\n"
 "Language-Team: RDMO <rdmo-team@listserv.dfn.de>\n"
@@ -903,7 +903,7 @@ msgstr "Neue Bedingung erstellen"
 #: domain/templates/domain/domain.html:59
 #: options/templates/options/options.html:64
 #: projects/templates/projects/project_answers.html:36
-#: projects/templates/projects/project_detail_sidebar.html:85
+#: projects/templates/projects/project_detail_sidebar.html:83
 #: projects/templates/projects/project_view.html:42
 #: questions/templates/questions/catalogs_sidebar.html:77
 #: tasks/templates/tasks/tasks.html:60 views/templates/views/views.html:59
@@ -2099,28 +2099,13 @@ msgstr "Standort"
 msgid "The site this project belongs to (in a multi site setup)."
 msgstr "Die Site, zu der dieses Projekt gehört (in einem Multi-Standort-Setup)"
 
+#: projects/models/project.py:31
 msgid "Working title"
 msgstr "Arbeitstitel"
-msgid "The working title for this project."
-msgstr "Der Arbeitstitel für dieses Projekt."
-
-#: projects/models/project.py:31 projects/models/snapshot.py:22
-#: projects/templates/projects/project_questions_modal_form_valuesets.html:19
-#: projects/templates/projects/project_upload.html:26
-#: projects/templates/projects/project_upload.html:101
-#: questions/templates/questions/catalogs_modal_form_catalogs.html:156
-#: questions/templates/questions/catalogs_modal_form_questionsets.html:207
-#: questions/templates/questions/catalogs_modal_form_sections.html:156
-#: tasks/templates/tasks/tasks_export.html:27
-#: tasks/templates/tasks/tasks_modal_form_tasks.html:159
-#: views/templates/views/views_export.html:27
-#: views/templates/views/views_modal_form_views.html:158
-msgid "Title"
-msgstr "Titel"
 
 #: projects/models/project.py:32
-msgid "The title for this project."
-msgstr "Der Titel für dieses Projekt."
+msgid "The working title for this project."
+msgstr "Der Arbeitstitel für dieses Projekt."
 
 #: projects/models/project.py:36 projects/models/snapshot.py:27
 #: projects/templates/projects/issue_send_integrations.html:8
@@ -2162,6 +2147,20 @@ msgstr "Die Ansichten die für dieses Projekt verwendet werden."
 #: projects/models/snapshot.py:18
 msgid "The project this snapshot belongs to."
 msgstr "Das Projekt zu dem dieser Snapshot gehört."
+
+#: projects/models/snapshot.py:22
+#: projects/templates/projects/project_questions_modal_form_valuesets.html:19
+#: projects/templates/projects/project_upload.html:26
+#: projects/templates/projects/project_upload.html:101
+#: questions/templates/questions/catalogs_modal_form_catalogs.html:156
+#: questions/templates/questions/catalogs_modal_form_questionsets.html:207
+#: questions/templates/questions/catalogs_modal_form_sections.html:156
+#: tasks/templates/tasks/tasks_export.html:27
+#: tasks/templates/tasks/tasks_modal_form_tasks.html:159
+#: views/templates/views/views_export.html:27
+#: views/templates/views/views_modal_form_views.html:158
+msgid "Title"
+msgstr "Titel"
 
 #: projects/models/snapshot.py:23
 msgid "The title for this snapshot."
@@ -2445,14 +2444,10 @@ msgid "Show task"
 msgstr "Aufgabe anzeigen"
 
 #: projects/templates/projects/project_detail_issues.html:55
-msgid ""
-"No active tasks found. Please first answer the questions in the question "
-"catalog by selecting \"Answer questions\". From your answers the necessary "
-"tasks will be generated."
-msgstr ""
-"Keine aktiven Aufgaben gefunden. Bitte beantworten Sie zunächst die Fragen "
-"im Fragenkatalog, indem Sie „Fragen beantworten“ auswählen. Aus Ihren "
-"Antworten werden die notwendigen Aufgaben für Sie generiert."
+#, fuzzy
+#| msgid "No views found."
+msgid "No active tasks found."
+msgstr "Keine Ansichten gefunden."
 
 #: projects/templates/projects/project_detail_memberships.html:9
 msgid "Members"
@@ -2499,7 +2494,7 @@ msgstr "Snapshot erstellen"
 msgid "Back to projects overview"
 msgstr "Zurück zu den Projekten"
 
-#: projects/templates/projects/project_detail_sidebar.html:100
+#: projects/templates/projects/project_detail_sidebar.html:98
 msgid "Import values from file"
 msgstr "Werte aus Datei importieren"
 
@@ -2591,7 +2586,7 @@ msgstr "Neues Projekt erstellen"
 msgid "Questionnaire"
 msgstr "Fragebogen"
 
-#: projects/templates/projects/project_questions_add_field_button.html:6
+#: projects/templates/projects/project_questions_add_field_button.html:7
 #: projects/templates/projects/project_questions_questionset_head.html:11
 #: projects/templates/projects/project_questions_questionset_head.html:32
 #, python-format
@@ -2702,19 +2697,19 @@ msgid "%(values)s of %(total)s"
 msgstr "%(values)s von %(total)s"
 
 #: projects/templates/projects/project_questions_sidebar.html:30
+#: projects/templates/projects/site_projects.html:26
+msgid "Back to my projects"
+msgstr "Zurück zu meinen Projekten"
+
+#: projects/templates/projects/project_questions_sidebar.html:34
 msgid "Navigation"
 msgstr "Navigation"
 
-#: projects/templates/projects/project_questions_sidebar.html:33
+#: projects/templates/projects/project_questions_sidebar.html:53
 msgid "Please note that using the navigation will discard any usaved input."
 msgstr ""
 "Bitte beachten sie das durch die Benutzung der Navigation ungesicherte "
 "Eingaben verworfen werden."
-
-#: projects/templates/projects/project_questions_sidebar.html:57
-#: projects/templates/projects/site_projects.html:26
-msgid "Back to my projects"
-msgstr "Zurück zu meinen Projekten"
 
 #: projects/templates/projects/project_upload.html:20
 #, python-format
@@ -4132,6 +4127,23 @@ msgid "An empty list implies that the view can be used with every catalog."
 msgstr ""
 "Eine leere Liste bedeutet, dass die Ansicht mit jedem Katalog verwendet "
 "werden kann."
+
+#, fuzzy
+#~| msgid "Update %(name)s"
+#~ msgid "Add %(name)s"
+#~ msgstr "%(name)s bearbeiten"
+
+#~ msgid "The title for this project."
+#~ msgstr "Der Titel für dieses Projekt."
+
+#~ msgid ""
+#~ "No active tasks found. Please first answer the questions in the question "
+#~ "catalog by selecting \"Answer questions\". From your answers the "
+#~ "necessary tasks will be generated."
+#~ msgstr ""
+#~ "Keine aktiven Aufgaben gefunden. Bitte beantworten Sie zunächst die "
+#~ "Fragen im Fragenkatalog, indem Sie „Fragen beantworten“ auswählen. Aus "
+#~ "Ihren Antworten werden die notwendigen Aufgaben für Sie generiert."
 
 #~ msgid ""
 #~ "Please enter the values for the copy of the attribute below and change at "
