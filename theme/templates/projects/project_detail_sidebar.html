@@ -3,6 +3,11 @@
 {% load core_tags %}
 <!-- CHANGE remove unused menu item -->
 <h2>{% trans 'Options' %}</h2>
+
+{% has_perm 'projects.change_project_object' request.user project as can_change_project %}
+{% has_perm 'projects.delete_project_object' request.user project as can_delete_project %}
+{% if can_change_project or can_delete_project %}
+
 <ul class="list-unstyled">
 
     <li>
