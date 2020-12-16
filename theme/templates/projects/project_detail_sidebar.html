@@ -4,14 +4,20 @@
 <!-- CHANGE remove unused menu item -->
 <h2>{% trans 'Options' %}</h2>
 <ul class="list-unstyled">
+
     <li>
+        {% if can_change_project %}
         <a style = "font-weight: bold" href="{% url 'project_questions' project.pk %}">{% trans 'Answer questions' %}</a>
+        {% else %}
+        <a style = "font-weight: bold" href="{% url 'project_questions' project.pk %}">{% trans 'View questions' %}</a>
+        {% endif %}
     </li>
     <li>
         <a href="{% url 'projects' %}">{% trans 'Back to projects overview' %}</a>
     </li>
 </ul>
-{% if settings.PROJECT_EXPORTS %}
+{% has_perm 'projects.export_project_object' request.user project as can_export_project %}
+{% if settings.PROJECT_EXPORTS and can_export_project %}
 <h2>{% trans 'Export' %}</h2>
 
 <ul class="list-unstyled">
@@ -25,7 +31,8 @@
 </ul>
 {% endif %}
 
-{% if settings.PROJECT_IMPORTS %}
+{% has_perm 'projects.export_project_object' request.user project as can_export_project %}
+{% if settings.PROJECT_IMPORTS and can_export_project %}
 
 <h2>{% trans 'Import values from file' %}</h2>
 

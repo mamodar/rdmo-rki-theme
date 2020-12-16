@@ -1,4 +1,5 @@
 {% load i18n %}
+{% load core_tags %}
 
 <h2>{% trans 'Tasks' %}</h2>
 
@@ -20,7 +21,7 @@
         {{ issue.task.title }}
       </a>
     </td>
-    <td>{{ issue.task.text }}</td>
+    <td>{{ issue.task.text|markdown }}</td>
     <td>
       {% for dates in issue.dates %}
       {% if dates|length > 1 %}
@@ -52,5 +53,6 @@
 {% else %}
 
 <p>{% trans 'No active tasks found. Please first answer the questions in the question catalog by selecting "Answer questions". From your answers the necessary tasks will be generated.' %}</p>
+
 
 {% endif %}
