@@ -6,8 +6,6 @@
 
 {% has_perm 'projects.change_project_object' request.user project as can_change_project %}
 {% has_perm 'projects.delete_project_object' request.user project as can_delete_project %}
-{% if can_change_project or can_delete_project %}
-
 <ul class="list-unstyled">
 
     <li>
@@ -21,6 +19,8 @@
         <a href="{% url 'projects' %}">{% trans 'Back to projects overview' %}</a>
     </li>
 </ul>
+{% endif %}
+
 {% has_perm 'projects.export_project_object' request.user project as can_export_project %}
 {% if settings.PROJECT_EXPORTS and can_export_project %}
 <h2>{% trans 'Export' %}</h2>
